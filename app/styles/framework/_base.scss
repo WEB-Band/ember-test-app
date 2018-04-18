@@ -1,0 +1,41 @@
+h1 {
+    margin-bottom: 30px;
+}
+h3 {
+    color: #{$pink};
+}
+.container-fluid {
+    padding: 0;
+}
+
+footer {
+    background: #{$dark};
+    color: $color-white;
+    padding: 15px;
+}
+section>row {
+    min-height: 300px;
+}
+
+.banner {
+    height: 100px;
+    background: url('../images/pexels-photo-114979.jpeg') center bottom no-repeat;
+    background-size: cover;
+}
+.banner.banner-contact {
+    background: url('../images/pexels-photo-543210.jpeg') center bottom no-repeat;
+    background-size: cover;
+}
+
+.app-content,
+.app-sidebar {
+    background: #{$light};
+    padding: 30px 15px!important;
+}
+
+.checkboxes {
+    margin-bottom: 20px;
+}
+.app-filter-sidebar {
+    padding: 15px;
+}

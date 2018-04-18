@@ -1,0 +1,25 @@
+<div class="row no-gutters">
+    <div class="app-content {{if sidebar "col-sm-8" "col-sm-12"}}">
+        <h1>Contact</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Address</h3>
+                <p>Grodno city</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Phone</h3>
+                <p>+375293752929</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Email</h3>
+                <p>support@testapp.com</p>
+            </div>
+        </div>
+    </div>
+
+    {{#if sidebar}}
+        <div class="app-sidebar col-sm-4">
+            {{contact-info contact=model}}
+        </div>
+    {{/if}}
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <header>
+        <div class="banner {{if isContact "banner-contact"}}"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            {{#link-to 'index' class="navbar-brand"}}TestApp{{/link-to}}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    {{#link-to 'app.about' class="nav-item nav-link"}}About me{{/link-to}}
+                    {{#link-to 'app.portfolio' class="nav-item nav-link"}}Portfolio{{/link-to}}
+                    {{#link-to 'app.services' class="nav-item nav-link"}}Services{{/link-to}}
+                    {{#link-to 'contact' class="nav-item nav-link"}}Contact{{/link-to}}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        {{outlet}}
+    </section>
+
+    <footer>
+        © 2018 TestApp, Inc.
+    </footer>
+</div>
