@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import { computed } from '@ember/object';
 
 export default Component.extend({
     typeOfSites: [
@@ -8,5 +9,5 @@ export default Component.extend({
         { isChecked: false, label: 'Portals' }
     ],
 
-    ifMoreThree: Ember.computed.filterBy('typeOfSites', 'isChecked', true),
+    ifMoreThree: computed.filterBy('typeOfSites', 'isChecked', true),
 });

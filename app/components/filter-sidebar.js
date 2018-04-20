@@ -1,5 +1,9 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    // tagName: 'section',
+    actions: {
+        setChanged(state) {
+            this.set('sidebar', state.target.value);
+        }
+    }
 });
