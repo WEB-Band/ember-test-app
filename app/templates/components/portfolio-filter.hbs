@@ -14,7 +14,6 @@
 
 <div class="row card">
     <div class="card-body">
-        {{custom-condition-helper ifMoreThree.length 3 "List of portfolio items is too big!" "List of portfolio is coming..."}}
-        {{!-- {{if (gt ifMoreThree.length 3) "List of portfolio items is too big!" "List of portfolio is coming..."}} --}}
+        {{if (gt ifMoreThree.length 3) "List of portfolio items is too big!" "List of portfolio is coming..."}}
     </div>
 </div>
