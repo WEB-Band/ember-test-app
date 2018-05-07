@@ -3,11 +3,8 @@ import { computed } from '@ember/object';
 
 export default Controller.extend({
     queryParams: ['sidebar'],
+    sidebar: 'hide',
     isSidebar: computed('sidebar', function() {
-        if (this.get('sidebar') === 'show') {
-            return true;
-        } else {
-            return false;
-        }
-    })
+        return this.get('sidebar') === 'show';
+    }),
 });
